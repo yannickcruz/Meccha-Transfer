@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Anton';
+    src: url('../assets/fonts/Anton-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Barlow';
+    src: url('../assets/fonts/BarlowCondensed-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('../assets/fonts/BebasNeue-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    /* overflow-x removido daqui: em seletor universal quebra position:absolute/fixed,
+       tooltips, dropdowns e sombras. Fica só no html/body abaixo. */
+}
+
+html, body{
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body{
+    font-family: 'Barlow', Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --primary-bg-color: #04070a;
+    --sec-bg-color: #212121;
+    --sec-bg-color-transparent: #21212189;
+    --primary-text-color: #f7f6f7;
+    --branch-cyan-color: #00f1f6;
+    --gray-text-color: #7e8383;
+}
+
+#main-content{
+    background-color: var(--primary-bg-color);
+    min-height: 100dvh;
+    width: 100%;
+}
+
+.std-text{
+    color: var(--primary-text-color);
+    font-size: 1.5rem;
+}
+
+.s-icon{
+    display: flex;
+    color: var(--branch-cyan-color);
+    border: 2px solid var(--gray-text-color);
+    padding: 0.5rem;
+    border-radius: 20px;
+}
