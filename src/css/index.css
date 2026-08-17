@@ -34,19 +34,21 @@ html, body{
 
 body{
     font-family: 'Barlow', Arial, Helvetica, sans-serif;
+    background-color: var(--primary-bg-color);
 }
 
 :root{
     --primary-bg-color: #04070a;
     --sec-bg-color: #212121;
     --sec-bg-color-transparent: #21212189;
+    --third-bg-color: #10151a;
     --primary-text-color: #f7f6f7;
     --branch-cyan-color: #00f1f6;
     --gray-text-color: #7e8383;
+    --dark-cyan: #14242c;
 }
 
 #main-content{
-    background-color: var(--primary-bg-color);
     min-height: 100dvh;
     width: 100%;
 }

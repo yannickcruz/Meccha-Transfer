@@ -1,9 +1,10 @@
 import MT_Side_Logo from '../assets/img/MT_Side_Logo.webp'
 import '../css/landingpage.css'
-import { Box, CirclePlus } from 'lucide-react'
+import { Box, CirclePlus, KeyRound } from 'lucide-react'
+import { Navigate, useNavigate } from 'react-router-dom'
 
 const LandingPage = () => {
-    
+    const navigate = useNavigate();
 
     return(
         <section id="LandingPage">
@@ -18,10 +19,10 @@ const LandingPage = () => {
                     <div className="lp-action-area-subcontainer">
                         <span className="s-icon"><Box/></span>
                         <p className="std-text lp-a-a-text" >GERAR NOVA SESSÃO</p>
-                        <button className="lp-btn"><CirclePlus/> Gerar nova Sessão</button>
+                        <button className="lp-btn" onClick={() => navigate('/Transfer')}><CirclePlus/> Gerar nova Sessão</button>
                     </div>
                     <form action="" className="lp-action-area-subcontainer">
-                        <span className="s-icon"><Box/></span>
+                        <span className="s-icon"><KeyRound/></span>
                         <p className="std-text lp-a-a-text" >INSERIR CHAVE DE ACESSO</p>
                         <div id="lp-form-area">
                             <input type="text" id="lp-form-input"  placeholder='Coloque a chave de acesso aqui'/>

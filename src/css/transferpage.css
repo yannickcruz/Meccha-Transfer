@@ -1,0 +1,232 @@
+#TransferPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+#TP-Header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    gap: 2rem;
+    border: 2px solid var(--dark-cyan);
+    border-radius: 20px;
+}
+
+#TP-Logo{
+    width: 18rem;
+    border-radius: 10px;
+    padding: 0.2rem;
+    cursor: pointer;
+}
+
+#TP-Logo:hover{
+    background-color: var(--third-bg-color);
+    border: 1px solid var(--branch-cyan-color);
+}
+
+#header-ops{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.tp-btn{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    border: 2px solid var(--dark-cyan);
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 1rem;
+}
+
+.tp-btn:hover{
+    background-color: var(--third-bg-color);
+}
+
+#tp-upload-btn{
+    color: var(--branch-cyan-color);
+    border-color: var(--branch-cyan-color);
+}
+
+.tp-key-box{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    background-color: var(--primary-bg-color);
+    border: 1px solid var(--dark-cyan);
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+}
+
+.tp-key-label{
+    color: var(--gray-text-color);
+    font-size: 0.7rem;
+    letter-spacing: 0.05rem;
+}
+
+.tp-key-value-row{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.tp-key-value{
+    color: var(--branch-cyan-color);
+    font-size: 0.95rem;
+    letter-spacing: 0.02rem;
+}
+
+.tp-copy-btn{
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    color: var(--branch-cyan-color);
+    cursor: pointer;
+    padding: 0;
+}
+
+#tp-admin-access{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--primary-text-color);
+    font-size: 0.85rem;
+    max-width: 12rem;
+    cursor: pointer;
+}
+
+#tp-admin-access input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 1.1rem;
+    height: 1.1rem;
+    min-width: 1.1rem;
+    border: 2px solid var(--branch-cyan-color);
+    border-radius: 4px;
+    background-color: var(--primary-bg-color);
+    cursor: pointer;
+}
+
+#tp-admin-access input[type="checkbox"]:checked{
+    background-color: var(--branch-cyan-color);
+}
+
+#TP-FileList{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    padding: 2rem;
+}
+
+.tp-file-item{
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    background-color: var(--primary-bg-color);
+    border: 1px solid var(--dark-cyan);
+    border-radius: 15px;
+    padding: 1.25rem 1.5rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tp-file-item-active{
+    border-color: var(--branch-cyan-color);
+    box-shadow: 0 0 12px rgba(0, 241, 246, 0.35);
+}
+
+.tp-file-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-text-color);
+    background-color: var(--sec-bg-color);
+    border-radius: 8px;
+    width: 3.2rem;
+    height: 3.2rem;
+}
+
+.tp-file-info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    flex: 1;
+}
+
+.tp-file-name{
+    color: var(--primary-text-color);
+    font-size: 1.15rem;
+}
+
+.tp-file-size{
+    color: var(--gray-text-color);
+    font-size: 0.9rem;
+}
+
+.tp-file-actions{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.tp-actions-select{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--primary-bg-color);
+    color: var(--gray-text-color);
+    border: 1px solid var(--dark-cyan);
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.tp-delete-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-bg-color);
+    color: var(--branch-cyan-color);
+    border: 2px solid var(--branch-cyan-color);
+    border-radius: 8px;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.tp-delete-btn:hover{
+    background-color: var(--dark-cyan);
+}
+
+.tp-file-checkbox{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 1.3rem;
+    height: 1.3rem;
+    min-width: 1.3rem;
+    border: 2px solid var(--gray-text-color);
+    border-radius: 5px;
+    background-color: var(--primary-bg-color);
+    cursor: pointer;
+}
+
+.tp-file-item-active .tp-file-checkbox{
+    border-color: var(--branch-cyan-color);
+}
+
+.tp-file-checkbox:checked{
+    background-color: var(--branch-cyan-color);
+    border-color: var(--branch-cyan-color);
+}
