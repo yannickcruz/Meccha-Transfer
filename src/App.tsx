@@ -11,7 +11,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Layout/>}>
         <Route index element={<LandingPage/>}/>
-        <Route path='/Transfer' element={<TransferPage/>}/> 
+        <Route path='/Transfer' element={<TransferPage sessionKey={null} sessionFiles={null}/>}/> 
       </Route>
     </Routes>
   )
